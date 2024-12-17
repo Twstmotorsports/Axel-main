@@ -1,0 +1,129 @@
+.recipe-list-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #333;
+  letter-spacing: 1px;
+}
+
+.add-recipe-button,
+.back-button {
+  background: linear-gradient(to right, #4caf50, #66bb6a);
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+
+.add-recipe-button:hover,
+.back-button:hover {
+  background: linear-gradient(to right, #45a049, #388e3c);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.recipe-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.recipe-panel {
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.recipe-panel:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.recipe-title {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #333;
+}
+
+.recipe-actions {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+  justify-content: flex-start;
+}
+
+.recipe-actions button {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+
+.view-button {
+  background: linear-gradient(to right, #2196f3, #42a5f5);
+  color: white;
+}
+
+.view-button:hover {
+  background: linear-gradient(to right, #1e88e5, #1976d2);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+.update-button {
+  background: linear-gradient(to right, #ff9800, #ffa726);
+  color: white;
+}
+
+.update-button:hover {
+  background: linear-gradient(to right, #fb8c00, #f57c00);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+.error-message {
+  color: #e74c3c;
+  font-size: 1rem;
+  margin-top: 20px;
+  padding: 10px;
+  background: #fbe3e3;
+  border: 1px solid #e0b4b4;
+  border-radius: 6px;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .recipe-actions {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .recipe-panel {
+    padding: 15px;
+  }
+
+  .add-recipe-button,
+  .back-button {
+    width: 100%;
+  }
+}
